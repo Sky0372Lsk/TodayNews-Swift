@@ -13,7 +13,7 @@ class VideoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = globalColor()
         // Do any additional setup after loading the view.
     }
 

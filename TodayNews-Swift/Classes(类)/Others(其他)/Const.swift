@@ -8,9 +8,9 @@
 
 import UIKit
 
-// 屏幕的宽
+/// 屏幕的宽
 let SCREEN_W = UIScreen.main.bounds.width
-// 屏幕的高
+/// 屏幕的高
 let SCREEN_H = UIScreen.main.bounds.height
 
 /// RGBA的颜色设置
@@ -27,3 +27,10 @@ func globalColor() -> UIColor {
 func globalRedColor() -> UIColor {
     return myColor(r: 245, g: 80, b: 83, a: 1.0)
 }
+
+/// iPhone 5
+let isIPhone5 = SCREEN_H == 568 ? true : false
+/// iPhone 6
+let isIPhone6 = SCREEN_H == 667 ? true : false
+/// iPhone 6P
+let isIPhone6P = SCREEN_H == 736 ? true : false
